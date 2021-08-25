@@ -12,7 +12,6 @@ const findImages = () => {
     .then(response => response.json())
     .then((photos) => {
         images = photos;
-        console.log(images);
         const html_container = document.querySelector("#gallery_container");
         let html_result = ``;
         images.forEach((element, i)=>{
