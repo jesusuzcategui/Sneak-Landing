@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container container flex justify-content-space-between">
+            <div class="w-4">
+                <img class="logo" src="./img/Logo.png" alt="">
+            </div>
+            <div class="w-6">
+                <nav class="navbar navbar__desktop">
+                    <ul class="navbar__container">
+                        <li class="navbar__item"><a href="#" class="navbar__item--link navbar__item--link-active">All</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__item--link">Branding</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__item--link">Web</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__item--link">Photography</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__item--link">App</a></li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__item--link navbar__item--link-search">
+                                <img src="./img/Search Icon.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="navbar navbar__mobile">
+                    <ul class="navbar__container">
+                        <li class="navbar__item">
+                            <a href="javascript:openMobileMenu()" class="navbar__item--link">
+                                <img src="./img/Menu Icon.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section__hero">
+        <div class="section__hero--container">
+            <h1 class="section__hero--title">EXPLORE BEYOND HORIZON</h1>
+            <p class="section__hero--desc">Magna mundi referrentur quo, no rebum dignissim qui. <br> Per quodsi accusata id, agam labores.</p>
+            <a href="#gallery" class="section__hero--btn" href="#">VIEW OUR WORK</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="section__gallery margin-top">
+        <div class="container section__gallery--container">
+            <div class="container section__gallery--navigation-mode margin-bottom">
+                <nav class="section__gallery--navigation-controls">
+                    <ul>
+                        <li class="section__gallery--navigation-controls-item">
+                            <a href="javascript:toggleView(1);">
+                                <img src="./img/Block Icon.png" alt="">
+                            </a>
+                        </li>
+                        <li class="section__gallery--navigation-controls-item">
+                            <a href="javascript:toggleView(0);">
+                                <img src="./img/Column Icon.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="section__gallery--tags container">
+                <nav class="navbar margin-bottom">
+                    <ul class="navbar__container">
+                        <li class="navbar__item"><a href="#" class="navbar__item--link navbar__item--link-active">All</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__item--link">Branding</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__item--link">Web</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__item--link">Photography</a></li>
+                        <li class="navbar__item"><a href="#" class="navbar__item--link">App</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="gallery_container" class="masonry">
+            </div>
+            <div class="section__gallery--foot">
+                <a href="javascript:loadmore()" class="section__hero--btn" href="#">Show Me More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2016 - <strong>Sneak</strong> All Rigth Reserved</p>
+            <div class="footer_social">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/Facebook.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/Tweeter.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/Dribble.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/Google_.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/Youtube.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--MOBILE MENU-->
+    <div id="sidebar__mobile" class="sidebar__mobile">
+        <div class="sidebar__mobile--container">
+            <div class="sidebar__mobile--header">
+                <div class="sidebar__mobile--header-logo">
+                    <img src="./img/Logo.png" alt="">
+                </div>
+                <div  class="sidebar__mobile--header-close">
+                    <a href="javascript:closeMobileMenu()">
+                        <img src="./img/Close Icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar__mobile--search">
+                <form action="">
+                    <input type="search" placeholder="Search" />
+                </form>
+            </div>
+            <div class="sidebar__mobile--menu">
+                <ul class="navbar__container">
+                    <li class="navbar__item"><a href="#" class="navbar__item--link navbar__item--link-active">All</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item--link">Branding</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item--link">Web</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item--link">Photography</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__item--link">App</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--MOBILE MENU-->
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
